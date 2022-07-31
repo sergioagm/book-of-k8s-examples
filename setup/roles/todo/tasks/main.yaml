@@ -9,7 +9,7 @@
     name: openshift
 
 - name: deploy
-  community.kubernetes.k8s:
+  kubernetes.core.k8s:
     state: present
     namespace: default
     template: "{{ item }}"
